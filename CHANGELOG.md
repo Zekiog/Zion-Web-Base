@@ -8,8 +8,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
-- `SECURITY.md`, `CONTRIBUTING.md`, and an explicit MIT `LICENSE` file.
+- `SECURITY.md`, `CONTRIBUTING.md`, and an MIT `LICENSE`.
 - Social preview image at `.github/social-preview.png`.
 
 ### Changed
-- README updated with a project overview and development instructions.
+- README, `CONTRIBUTING.md`, `SECURITY.md`, `index.html`, and `package.json` describe the scaffold that is in the repository.
+- `package.json` repository URL is `git@github.com:Zekiog/Zion-Web-Base.git`. The author field is Mehmet Zeki Oguz.
+- Social preview text names the repository. It does not describe a deployed product.
