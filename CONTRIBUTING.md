@@ -1,62 +1,19 @@
 # Contributing
 
-Thanks for taking the time to contribute. This document explains how to
-report issues, propose changes, and submit pull requests that will be
-reviewed and merged quickly.
+Issues and pull requests are welcome. This repository has no issue templates and no pull request template.
 
-## Code of Conduct
+## Pull requests
 
-By participating in this project you agree to keep the interaction
-respectful, technical, and on-topic. Harassment, off-topic promotion, or
-deliberately hostile comments will be removed without notice.
+Branch from `main` and open the pull request against `main`.
 
-## Before opening an issue
+`npm run dev` and `npm run build` expect a `src/` tree. That directory is not in the repository. `npm run lint` expects an ESLint config file. There is none. There is no test script and no formatter config.
 
-1. Search existing issues (open + closed) for the same problem.
-2. Read the README and `docs/` (if any) — most setup questions are
-   already answered there.
-3. Try the latest `main`. Many reported issues are already fixed.
+`.github/workflows/ci.yml` runs `npm test` on pull requests to `main`. `package.json` does not define `test`.
 
-## Reporting bugs
+## Security
 
-Use the **Bug report** issue template. Include:
+Report vulnerabilities the way [SECURITY.md](./SECURITY.md) describes. Do not open a public issue for them.
 
-- Reproduction steps (minimal, copy-pastable)
-- Expected vs actual behaviour
-- Environment (OS, language runtime version, relevant service versions)
-- Relevant logs / stack traces — redact secrets before pasting
+## License
 
-## Proposing features
-
-Use the **Feature request** issue template. Explain:
-
-- The problem you are trying to solve
-- The proposed solution (one sentence if possible)
-- Alternatives you considered
-- Whether you are willing to send a PR
-
-## Submitting a pull request
-
-1. Fork the repository and create a feature branch from `main`.
-2. Make focused commits. Each commit should compile / pass tests.
-3. Follow the existing code style. Run formatters and linters locally
-   before pushing.
-4. Add or update tests for behavioural changes.
-5. Update the README / docs if user-visible behaviour changes.
-6. Open a PR against `main` using the PR template. Fill in:
-   - **What** changed (one paragraph)
-   - **Why** (link the issue it closes, e.g. `Closes #42`)
-   - **How** to verify locally (commands, screenshots)
-
-CI must be green before a review is requested. The reviewer may ask for
-small follow-ups — these are not rejections.
-
-## Security issues
-
-**Do not** open a public issue for security vulnerabilities. Follow the
-process in [SECURITY.md](./SECURITY.md) instead.
-
-## Licensing
-
-By submitting a contribution you agree that it will be licensed under
-the same license as the repository (see `LICENSE`).
+Contributions stay under the MIT license in `LICENSE`.
